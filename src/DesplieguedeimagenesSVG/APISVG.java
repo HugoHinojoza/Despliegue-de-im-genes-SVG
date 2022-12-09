@@ -187,14 +187,14 @@ public class APISVG extends javax.swing.JFrame {
                 Logger.getLogger(APISVG.class.getName()).log(Level.SEVERE, null, ex);
             }
 
-            // Crear la ventana para mostrar el dibujo SVG
+
             JInternalFrame intFrame;
             intFrame = new JInternalFrame(file.getName(), true, true, true, true);
 
-            // Con del documento DOM, crear el componente gráfico
+
             DespliegueSVG svg = new DespliegueSVG(doc);
             
-            // Agregar scroll bars al dibujo
+
             JScrollPane scrollPane = new JScrollPane(svg);
           
             intFrame.getContentPane().add(scrollPane);
@@ -207,17 +207,11 @@ public class APISVG extends javax.swing.JFrame {
         } else {
 
         }
-    }//GEN-LAST:event_openMenuItemActionPerformed
+    }
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -234,10 +228,7 @@ public class APISVG extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             Logger.getLogger(APISVG.class.getName()).log(Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new APISVG().setVisible(true);
@@ -245,7 +236,7 @@ public class APISVG extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JMenuItem aboutMenuItem;
     private javax.swing.JMenuItem contentMenuItem;
     private javax.swing.JMenuItem copyMenuItem;
