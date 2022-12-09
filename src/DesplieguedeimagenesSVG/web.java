@@ -19,7 +19,7 @@ public class web extends Object{
         }
         String url = args[0];
         System.out.println("Ingresando a " + url +"...");
-        System.out.println("Ingrese el archivo a descargar:");
+        System.out.println("Ingrese el archivo a descargar con su respectiva terminacion:");
         String archivo = sc.nextLine();
         System.out.println("Buscando a " + archivo +"...");
         //Directorio destino para las descargas
@@ -48,7 +48,7 @@ public class web extends Object{
         }
         try {
             System.out.println("Abriendo el svg...");
-            String directorio = "C:\\Users\\hugoa\\IdeaProjects\\Despliegue de iamgenes svg"+archivo+".svg";
+            String directorio = "C:\\Users\\hugoa\\IdeaProjects\\Despliegue de iamgenes svg\\"+archivo;
             ProcessBuilder abre = new ProcessBuilder();
             abre.command("cmd.exe", "/c", directorio);
             abre.start();
